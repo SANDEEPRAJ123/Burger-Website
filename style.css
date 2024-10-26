@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+   
+
+}
+
+.nav {
+    background-color: red;
+    padding: 15px 0;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    color: #79F604;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ABC105;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 12px 0;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 20px;
+}
+
+.content-text {
+    text-align: center;
+    margin-left: 500px;
+}
+
+.content-text h1 {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-text h2 {
+    font-size: 1.2rem;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-btn {
+    background-color: #ff5733;
+    color: #ffffff;
+}
+
+.order-btn:hover {
+    background-color: #c70039;
+}
+
+.call-btn {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.call-btn:hover {
+    background-color: #218838;
+}
+
+.burger-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-right: 400px;
+    margin-top: 20px;
+}
+
+.nav-links {
+    transition: all 0.3s ease-in-out;
+}
+
+.Menu-Section {
+    text-align: center;
+}
+.menu-section1{
+    text-align: center;
+}
+
+.Menu-Section h1 {
+    color: #000;
+    transition: color 0.5s;
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-section h1:hover {
+    color: #11cd17;
+}
+
+#menu-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-section h1 {
+    color: #000000;
+    font-size: 36px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 20px;
+}
+
+.menu-item img {
+    width: 280px;
+    height: auto;
+    border-radius: 10px;
+    margin: 150;
+    cursor: pointer;
+}
+
+.body-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image5 {
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-right: 85px;
+}
+
+.image5 img {
+    width: 600px;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image5 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #0becca;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    flex: 1;
+    /* Equal width */
+    margin-right: 15px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+    
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+}
+
+.form-textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #218838;
+}
+
+.Contact-h1 {
+    color: rgb(4, 92, 23);
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: rgb(1, 43, 1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    margin-top: 25px;
+    
+
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+.footer .menu {
+    color: white;
+    display: flex;
+    justify-content: center; 
+    margin: 0;              
+    list-style-type: none;  
+    gap: 25px;              
+    
+}
+
+.footer .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.heart {
+    width: 20px; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
+
+.footer .Sandeep1 {
+    color: rgb(9, 245, 135);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
